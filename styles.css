@@ -30,8 +30,9 @@
 }
 
 #navbar__logo {
-  background-color: #ff8177;
-  background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+  background: #83a4d4;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #b6fbff, #83a4d4);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #b6fbff, #83a4d4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -84,15 +85,15 @@
   border: none;
   outline: none;
   border-radius: 4px;
-  background: #833ab4;
-  background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
-  background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+  background: #24C6DC;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #514A9D, #24C6DC);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #514A9D, #24C6DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */   
   color: #fff;
   transition: all 0.3s ease;
 }
 
 .navbar__links:hover {
-  color: #9518fc;
+  color: #83a4d4;
   transition: all 0.3s ease;
 }
 
@@ -216,17 +217,9 @@
 }
 
 .hero__heading span {
-  background: #ee0979; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #ff6a00,
-    #ee0979
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #ff6a00,
-    #ee0979
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #24C6DC;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #514A9D, #24C6DC);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #514A9D, #24C6DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -236,17 +229,9 @@
 
 .hero__description {
   font-size: 60px;
-  background: #da22ff; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #9114ff,
-    #da22ff
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #8f0eff,
-    #da22ff
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #83a4d4;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #b6fbff, #83a4d4);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #b6fbff, #83a4d4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -294,8 +279,9 @@
 
 .main__content h1 {
   font-size: 2rem;
-  background-color: #fe3b6f;
-  background-image: linear-gradient(to top, #ff087b 0%, #ed1a52 100%);
+  background: #83a4d4;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #b6fbff, #83a4d4);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #b6fbff, #83a4d4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */   
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -307,17 +293,8 @@
 
 .main__content h2 {
   font-size: 1rem;
-  background: #ff8177; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #fff,
-    #da22ff
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #fff,
-    #da22ff
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #fff; /* fallback for old browsers */
+  background:#fff; /* Chrome 10-25, Safari 5.1-6 */
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -333,9 +310,9 @@
 
 .main__btn {
   font-size: 1.8rem;
-  background: #833ab4;
-  background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
-  background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+  background: #24C6DC;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #514A9D, #24C6DC);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #514A9D, #24C6DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */   
   padding: 20px 60px;
   border: none;
   border-radius: 4px;
@@ -483,8 +460,9 @@
 }
 
 .services h1 {
-  background-color: #ff8177;
-  background-image: linear-gradient(to right, #ff0844 0%, #f7673c 100%);
+  background: #83a4d4;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #b6fbff, #83a4d4);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #b6fbff, #83a4d4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
