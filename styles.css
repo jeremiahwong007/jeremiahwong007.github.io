@@ -362,7 +362,7 @@
   flex-direction: column;
   justify-content: center;
   color: #fff;
-  background: url('Cartoon_Me\ 5.png') no-repeat;
+  background: url('pictures/Cartoon_Me\ 5.png') no-repeat;
   background-size: cover;
 }
 
@@ -498,7 +498,7 @@
   flex-direction: column;
   justify-content: center;
   color: rgb(0, 0, 0);
-  background-image: url('Screenshot 2021-01-21 at 12.40.32 PM.png');
+  background-image: url('pictures/Screenshot 2021-01-21 at 12.40.32 PM.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
