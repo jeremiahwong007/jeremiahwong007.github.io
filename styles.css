@@ -30,9 +30,9 @@
 }
 
 #navbar__logo {
-  background: #83a4d4;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #b6fbff, #83a4d4);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #b6fbff, #83a4d4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+  background: #f12711;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #f5af19, #f16b11);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #f5af19, #f16b11); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -85,15 +85,15 @@
   border: none;
   outline: none;
   border-radius: 4px;
-  background: #24C6DC;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #514A9D, #24C6DC);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #514A9D, #24C6DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */   
+  background: #f12711;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #f5af19, #f12711);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */   
   color: #fff;
   transition: all 0.3s ease;
 }
 
 .navbar__links:hover {
-  color: #83a4d4;
+  color: #d18547;
   transition: all 0.3s ease;
 }
 
@@ -195,7 +195,6 @@
 .hero {
   background: #000000;
   background: linear-gradient(to right, #161616, #000000);
-  padding: 200px 0;
 }
 
 .hero__container {
@@ -203,11 +202,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   height: 90%;
   text-align: center;
-  padding: 30px;
+  padding: 200px;
+  background: url('https://wallpapercave.com/wp/wp6419835.jpg') no-repeat;
+  background-size: cover;
 }
 
 .hero__heading {
@@ -217,9 +218,9 @@
 }
 
 .hero__heading span {
-  background: #24C6DC;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #514A9D, #24C6DC);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #514A9D, #24C6DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+  background: #f12711;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #f5af19, #f12711);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -229,9 +230,9 @@
 
 .hero__description {
   font-size: 60px;
-  background: #83a4d4;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #b6fbff, #83a4d4);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #b6fbff, #83a4d4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+  background: #f12711;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #f5af19, #f16b11);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #f5af19, #f16b11); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -240,7 +241,7 @@
 }
 
 .highlight {
-  border-bottom: 4px solid rgb(132, 0, 255);
+  border-bottom: 4px solid #f5af19;
 }
 
 @media screen and (max-width: 768px) {
@@ -279,9 +280,7 @@
 
 .main__content h1 {
   font-size: 2rem;
-  background: #83a4d4;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #b6fbff, #83a4d4);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #b6fbff, #83a4d4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */   
+  background: #f5af19; 
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -310,9 +309,9 @@
 
 .main__btn {
   font-size: 1.8rem;
-  background: #24C6DC;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #514A9D, #24C6DC);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #514A9D, #24C6DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */   
+  background: #f12711;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #f5af19, #f12711);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */     
   padding: 20px 60px;
   border: none;
   border-radius: 4px;
@@ -337,7 +336,7 @@
   left: 0;
   width: 0;
   height: 100%;
-  background: #ff1ead;
+  background: #f5af19;
   transition: all 0.35s;
   border-radius: 4px;
 }
@@ -357,13 +356,14 @@
 .main__img--card {
   margin: 10px;
   height: 500px;
-  width: 500px;
+  width: 420px;
   border-radius: 4px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   color: #fff;
-  background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+  background: url('Pictures/Cartoon_Me\ 5.png') no-repeat;
+  background-size: cover;
 }
 
 .fa-layer-group,
@@ -450,19 +450,30 @@
 
 /* Services Section */
 .services {
-  background: #131313;
+  background: #202020;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100%;
-  padding: 10rem 0;
+  padding: 5rem 0;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #ffffff;
 }
 
 .services h1 {
-  background: #83a4d4;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #b6fbff, #83a4d4);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #b6fbff, #83a4d4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+  background: #f5af19; 
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -486,35 +497,28 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: #fff;
-  background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+  color: rgb(0, 0, 0);
+  background-image: url('Pictures/Screenshot 2021-01-21 at 12.40.32 PM.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
   transition: 0.3s ease-in;
 }
 
 .services__card:nth-child(2) {
-  background: #1fa2ff; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #a6ffcb,
-    #12d8fa,
-    #1fa2ff
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #a6ffcb,
-    #12d8fa,
-    #1fa2ff
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-image: url('https://cdn.vox-cdn.com/thumbor/-R6QOFWcK3JsGx5H0gLjHikZuYg=/0x0:2040x1360/1400x933/filters:focal(857x517:1183x843):no_upscale()/cdn.vox-cdn.com/uploads/chorus_image/image/64035800/acastro_190618_1777_cloud_gaming_0003.0.jpg');
+  background-repeat: no-repeat;
+  background-position: center; 
+  position: relative;
 }
 
 .services__card:nth-child(3) {
-  background-image: linear-gradient(
-    -225deg,
-    #231557 0%,
-    #44107a 29%,
-    #ff1361 67%,
-    #fff800 100%
-  );
+  background-image: url('https://www.kindpng.com/picc/m/466-4661766_web-design-and-website-development-icon-web-design.png');
+  background-repeat: no-repeat;
+  background-position: center; 
+  position: relative;
+  ;
 }
 
 .services__card h2 {
@@ -551,6 +555,10 @@
   transform: scale(1.075);
   transition: 0.3s ease-in;
   cursor: pointer;
+}
+
+.services__card:hover.overlay {
+  opacity: 1;
 }
 
 @media screen and (max-width: 1300px) {
