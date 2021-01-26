@@ -448,8 +448,8 @@
   }
 }
 
-/* Services Section */
-.services {
+/* Projects Section */
+.projects {
   background: #202020;
   display: flex;
   flex-direction: column;
@@ -472,7 +472,7 @@
   background-color: #ffffff;
 }
 
-.services h1 {
+.projects h1 {
   background: #f5af19; 
   background-size: 100%;
   -webkit-background-clip: text;
@@ -483,13 +483,13 @@
   font-size: 2.5rem;
 }
 
-.services__wrapper {
+.projects__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
 }
 
-.services__card {
+.projects__card {
   margin: 10px;
   height: 425px;
   width: 300px;
@@ -506,14 +506,14 @@
   transition: 0.3s ease-in;
 }
 
-.services__card:nth-child(2) {
+.projects__card:nth-child(2) {
   background-image: url('https://cdn.vox-cdn.com/thumbor/-R6QOFWcK3JsGx5H0gLjHikZuYg=/0x0:2040x1360/1400x933/filters:focal(857x517:1183x843):no_upscale()/cdn.vox-cdn.com/uploads/chorus_image/image/64035800/acastro_190618_1777_cloud_gaming_0003.0.jpg');
   background-repeat: no-repeat;
   background-position: center; 
   position: relative;
 }
 
-.services__card:nth-child(3) {
+.projects__card:nth-child(3) {
   background-image: url('https://www.kindpng.com/picc/m/466-4661766_web-design-and-website-development-icon-web-design.png');
   background-repeat: no-repeat;
   background-position: center; 
@@ -521,23 +521,31 @@
   ;
 }
 
-.services__card h2 {
+.projects__card:nth-child(4) {
+  background-image: url('https://www.kindpng.com/picc/m/466-4661766_web-design-and-website-development-icon-web-design.png');
+  background-repeat: no-repeat;
+  background-position: center; 
+  position: relative;
+  ;
+}
+
+.projects__card h2 {
   text-align: center;
 }
 
-.services__card p {
+.projects__card p {
   text-align: center;
   margin-top: 24px;
   font-size: 20px;
 }
 
-.services__btn {
+.projects__btn {
   display: flex;
   justify-content: center;
   margin-top: 16px;
 }
 
-.services__card button {
+.projects__card button {
   color: #fff;
   padding: 14px 24px;
   border: none;
@@ -547,28 +555,28 @@
   font-size: 1rem;
 }
 
-.services__card button:hover {
+.projects__card button:hover {
   cursor: pointer;
 }
 
-.services__card:hover {
+.projects__card:hover {
   transform: scale(1.075);
   transition: 0.3s ease-in;
   cursor: pointer;
 }
 
-.services__card:hover.overlay {
+.projects__card:hover.overlay {
   opacity: 1;
 }
 
 @media screen and (max-width: 1300px) {
-  .services__wrapper {
+  .projects__wrapper {
     grid-template-columns: 1fr 1fr;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .services__wrapper {
+  .projects__wrapper {
     grid-template-columns: 1fr;
   }
 }
