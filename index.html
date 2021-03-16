@@ -49,10 +49,9 @@
           </div>
           <div class="main__content">
             <h1>About me</h1>
-            <h2>Hello! My name is Jeremy and I am currently a first-year student in the University of Toronto St. George Campus pursuing a Bsc Double Major in Computer Science and Economics.
+            <h2>Hello! My name is Jeremy and I am currently a first-year student in the University of Toronto St. George Campus pursuing a Bsc Specialist in Computer Science.
               Solving both real world and coding problems using concepts in computer science has always been satisfying for me since highschool. This website of mine is to 
             display what I do in my personal time related to this field! </h2>
-            <button class="main__btn"><a href="#projects">View my projects</a></button>
           </div>
         </div>
       </div>
@@ -62,24 +61,24 @@
         <h1>My Projects</h1>
         <div class="projects__wrapper">
           <div class="projects__card">
+            <h2>Anime Atlas</h2>
+            <p class="projects__text">A computer program that helps recommends anime for you to watch.</p>
+            <div class="projects__btn"><button><a href="https://github.com/jeremiahwong007/SwimmingForYou">View repository</a></button></div>
+          </div>
+          <div class="projects__card">
             <h2>Meat Monitor (Vegetarianism Project)</h2>
-            <p>Calculates your carbon footprint from your meat consumption and gives dietary advice from an environmental standpoint.</p>
+            <p class="projects__text">Calculates your carbon footprint from your meat consumption and gives dietary advice from an environmental standpoint.</p>
             <div class="projects__btn"><button><a href="https://github.com/jeremiahwong007/EnvironmentalDataProject">View repository</a></button></div>
           </div>
           <div class="projects__card">
-            <h2>Ninja Game</h2>
-            <p>Have fun with my obstacle and fighting game, where you embody the spirits of a ninja! (To be uploaded)</p>
-            <div class="projects__btn"><button><a href ="https://github.com/jeremiahwong007/NinjaGame">View repository</a></button></div>
-          </div>
-          <div class="projects__card">
             <h2>Personal Website</h2>
-            <p>My experience with website creation (this website!)</p>
+            <p class="projects__text">My experience with website creation (this website!)</p>
             <div class="projects__btn"><button><a href="https://github.com/jeremiahwong007/jeremiahwong007.github.io">View repository</a></button></div>
           </div>
           <div class="projects__card">
-            <h2>Swimming For You</h2>
-            <p>My earlier experience with website creation</p>
-            <div class="projects__btn"><button><a href="https://github.com/jeremiahwong007/SwimmingForYou">View repository</a></button></div>
+            <h2>Ninja Game (Work in progress)</h2>
+            <p class="projects__text">Have fun with my obstacle and fighting game, where you embody the spirits of a ninja!</p>
+            <div class="projects__btn"><button><a href="https://github.com/jeremiahwong007/NinjaGame">View repository</a></button></div>
           </div>
         </div>
       </div>
@@ -89,12 +88,22 @@
         <div class="main__container">
           <div class="main__content">
             <h1>Contact Me</h1>
-            <img src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1024px-Instagram_icon.png' width="50" height="50">
-            <h2 style="display:inline-block; padding-left: 10px; padding-bottom: 10px">jeremyh.wong</h2><br />
-            <img src='https://image.flaticon.com/icons/png/512/281/281769.png' width="50" height="50">
-            <h3>jeremiahwong007@gmail.com</h3>
+            <a href="https://www.instagram.com/jeremyh.wong/"><img src='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1024px-Instagram_icon.png' width="50" height="50"></a>
             <img src='https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-linkedin-circle-512.png' width="50" height="50"><br />
-            <button class="main__btn"><a href="https://github.com/jeremiahwong007">My github profile</a></button>
+          </div>
+          <div class="row">
+            <div class="column">
+              <form action="/action_page.php">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                <label for="email">Email</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your email...">
+                <textarea id="subject" name="subject" style="height:170px"></textarea>
+                <input type="submit" value="Submit">
+              </form>
+            </div>
           </div>
           </div>
         </div>
