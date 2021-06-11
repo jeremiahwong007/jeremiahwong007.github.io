@@ -213,7 +213,7 @@ a, a:hover, a:focus, a:active {
   height: 90%;
   text-align: center;
   padding: 200px;
-  background: url('https://wallpapercave.com/wp/wp6419835.jpg') no-repeat;
+  background: url('images/Toronto_Wallpaper.jpeg') no-repeat;
   background-size: cover;
 }
 
@@ -532,7 +532,7 @@ a, a:hover, a:focus, a:active {
 }
 
 .projects__card:nth-child(4) {
-  background-image: url('https://www.kindpng.com/picc/m/466-4661766_web-design-and-website-development-icon-web-design.png');
+  background-image: url('https://imgs.michaels.com/MAM/assets/1/726D45CA1C364650A39CD1B336F03305/img/98D9F01F9D524A8FA793C47C21DDCE09/28181_30881_1.jpg?fit=inside|540:540');
   background-repeat: no-repeat;
   background-position: center; 
   position: relative;
