@@ -763,3 +763,14 @@ input[type=submit]:hover {
   }
 }
 
+.name-box{
+  width: 400px;
+}
+
+.email-box{
+  width: 400px;
+}
+
+.label{
+  color:#da7c3e
+}
