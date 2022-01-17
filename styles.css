@@ -504,7 +504,7 @@ a, a:hover, a:focus, a:active {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: url('https://cdn.webshopapp.com/shops/66605/files/264151148/oracal-631-turquoise-blue-mat.jpg');
+  background-image: url('https://wallpaperaccess.com/full/1828697.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -517,14 +517,14 @@ a, a:hover, a:focus, a:active {
   opacity: 0;
 }
 
-.projects__card:nth-child(2) {
+.projects__card:nth-child(3) {
   background-image: url('https://www.clipartkey.com/mpngs/m/21-216445_compass-computer-icons-rose-plant-flower-transparent-transparent.png');
   background-repeat: no-repeat;
   background-position: center; 
   position: relative;
 }
 
-.projects__card:nth-child(3) {
+.projects__card:nth-child(4) {
   background-image: url('images/Screenshot 2021-01-21 at 12.40.32 PM.png');
   background-repeat: no-repeat;
   background-position: center; 
@@ -532,7 +532,7 @@ a, a:hover, a:focus, a:active {
   ;
 }
 
-.projects__card:nth-child(4) {
+.projects__card:nth-child(5) {
   background-image: url('https://www.kindpng.com/picc/m/466-4661766_web-design-and-website-development-icon-web-design.png');
   background-repeat: no-repeat;
   background-position: center; 
@@ -540,7 +540,7 @@ a, a:hover, a:focus, a:active {
   ;
 }
 
-.projects__card:nth-child(5) {
+.projects__card:nth-child(6) {
   background-image: url('https://imgs.michaels.com/MAM/assets/1/726D45CA1C364650A39CD1B336F03305/img/98D9F01F9D524A8FA793C47C21DDCE09/28181_30881_1.jpg?fit=inside|540:540');
   background-repeat: no-repeat;
   background-position: center; 
