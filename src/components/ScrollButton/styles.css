@@ -1,7 +1,6 @@
 .scrollButton{
     position: fixed; 
-    width: 100%;
-    left: 45%;
+    right: 2.5%;
     bottom: 70px;
     height: 20px;
     font-size: 3rem;

@@ -73,7 +73,7 @@ const Timeline = (props) => {
             </div>
             <div className='sm:ml-5 rounded-lg bg-black bg-opacity-40 text-white px-8 py-8'>
                 <div onMouseEnter={props.textEnter} onMouseLeave={props.textLeave}>
-                    <div className={`${showFinanceit ? 'fadeInInfo' : 'fadeOutInfo'}`}>
+                    <div className={`${showFinanceit ? 'fadeInInfo' : 'fadeOutInfo hidden'}`}>
                         <div className='grid grid-cols-2 mb-4 font-bold'>
                             <p>Software Developer Co-op</p>
                             <p className='text-right'>May 2023 - Present</p>
@@ -87,7 +87,7 @@ const Timeline = (props) => {
                         <p className='font-bold'>Tech Stack & Tools:</p>
                         <p>Ruby on Rails, Ember.js, Datadog, Rollbar, Looker, Gitlab, Github</p>
                     </div>
-                    <div className={showAvanir ? 'fadeInInfo' : 'fadeOutInfo'}>
+                    <div className={showAvanir ? 'fadeInInfo' : 'fadeOutInfo hidden'}>
                         <div className='grid grid-cols-2 mb-4 font-bold'>
                             <p>Information Technology Intern</p>
                             <p className='text-right'>June 2022 - August 2022</p>
@@ -100,7 +100,7 @@ const Timeline = (props) => {
                         <p className='font-bold'>Tech Stack & Tools:</p>
                         <p>Power BI, Excel, Power Automate, Rapid7</p>
                     </div>
-                    <div className={showAstri ? 'fadeInInfo' : 'fadeOutInfo'}>
+                    <div className={showAstri ? 'fadeInInfo' : 'fadeOutInfo hidden'}>
                         <div className='grid grid-cols-2 mb-4 font-bold'>
                             <p>Software Engineer Intern</p>
                             <p className='text-right'>August 2019 - June 2020</p>

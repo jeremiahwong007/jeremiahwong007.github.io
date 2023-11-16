@@ -26,8 +26,8 @@ const ScrollButton = () =>{
   window.addEventListener('scroll', toggleVisible);
   
   return (
-    <div className='hidden sm:block'>
-      <button className={`scrollButton`}>
+    <div className='hidden sm:block scrollButton'>
+      <button>
         <MdKeyboardDoubleArrowUp onClick={scrollToTop} 
         style={{display: visible ? 'inline' : 'none'}} />
       </button>
