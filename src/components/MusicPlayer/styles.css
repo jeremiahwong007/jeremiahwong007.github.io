@@ -1,0 +1,31 @@
+.musicCover {
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5%;
+}
+
+.playButton {
+    background: none;
+    border: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.time {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: smaller;
+}
+
+.timeline {
+    accent-color: white;
+    width: 80%;
+    background-color: #27ae60;
+}
+
+input[type="range"] {
+    background-color: #27ae60;
+}

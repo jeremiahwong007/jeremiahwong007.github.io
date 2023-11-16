@@ -1,0 +1,17 @@
+.fadeOutInfo{
+    opacity:0;
+    width:0;
+    height:0;
+}
+.fadeInInfo {
+    opacity:1;
+    transition: width 0.5s, height 0.5s, opacity 0.5s 0.5s;
+}
+
+.topTimeline {
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.bottomTimeline {
+    border-radius: 0 0 0.5rem 0.5rem;
+}

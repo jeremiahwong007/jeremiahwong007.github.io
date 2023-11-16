@@ -1,8 +1,12 @@
+
+import React from 'react';
 import './App.css';
-import StickyNavbar from './components/ComplexNavbar';
+import Home from './pages/landing'
 
 function App() {
-  return <StickyNavbar/ >
+  return (
+    <Home />
+  );
 }
 
 export default App;
