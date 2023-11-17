@@ -8,7 +8,7 @@ const ProjectCard = (props) => {
     return (
         <div className={`max-w-sm border shadow-md bg-black border-gray-900 rounded-lg bg-opacity-60 ${props.spacing}`} onMouseEnter={props.textEnter} onMouseLeave={props.textLeave}>
             <div className="p-5">
-                <h5 className="mb-4 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{props.name}</h5>
+                <h5 className="mb-4 text-2xl font-bold tracking-tight text-white">{props.name}</h5>
                 <ul className="list-none text-gray-400 mb-3"> {techStack} </ul>
                 <p className="mb-6 font-normal text-white">{props.description}</p>
                 {
