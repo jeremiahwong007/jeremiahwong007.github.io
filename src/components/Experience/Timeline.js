@@ -79,10 +79,11 @@ const Timeline = (props) => {
                             <p className='text-right'>May 2023 - Present</p>
                         </div>
                         <ul className='list-disc pl-4'>
-                            <li className='mb-2'>Developed and refined 10+ new features based on consumer/merchant requests using Ruby on Rails and Ember.js, reducing $500k+ in loan fraud losses and improving application usability.</li>
-                            <li className='mb-2'>Fixed 10+ bugs on production and deleted 7000+ lines of code utilizing Rollbar and Datadog observability tools, cleaning up Financeit’s product code base.</li>
-                            <li className='mb-2'>Restructured Financeit’s product with senior developers to use a new Equifax API for credit score and loan fraud checks, potentially saving $1M+ in loan funding losses.</li>
-                            <li className='mb-4'>Discussed learnings with the development department each quarter and led backlog grooming sessions.</li>
+                            <li className='mb-2'>Developed and refined 15+ features based on client requests using Ruby on Rails and Ember.js, improving usability and reducing $500k+ in loan fraud losses.</li>
+                            <li className='mb-2'>Reduced tech debt from Financeit’s main product code base by utilizing Rollbar and Datadog observability tools, fixing 15+ bugs on production and deleting 9000+ lines of code.</li>
+                            <li className='mb-2'>Restructured Financeit’s product with senior developers to use a new third-party API for credit score and loan fraud checks, projected to save $1M+ in loan funding losses.</li>
+                            <li className='mb-2'>Engineered a new profit-generating feature in the Financeit application with senior developers, estimated to generate at least $1M+ in gross revenue in the first year.</li>
+                            <li className='mb-4'>Partnered with a staff developer to deliver 2 months of live issue support, ensuring uninterrupted service for users by resolving 25+ urgent bugs and issues.</li>
                         </ul>
                         <p className='font-bold'>Tech Stack & Tools:</p>
                         <p>Ruby on Rails, Ember.js, Datadog, Rollbar, Looker, Gitlab, Github</p>
@@ -93,9 +94,9 @@ const Timeline = (props) => {
                             <p className='text-right'>June 2022 - August 2022</p>
                         </div>
                         <ul className='list-disc pl-4'>
-                            <li className='mb-2'>Developed a real-time application using Power BI to calculate statistics and refine the process of identifying 500+ devices in need of service.</li>
+                            <li className='mb-2'>Developed a real-time application using Power BI to calculate statistics and refine the process of identifying 500+ company devices in need of service.</li>
                             <li className='mb-2'>United with the cybersecurity division to link software vulnerability detection and malware prevention software statuses of company computers into the application, enabling 1100+ vulnerabilities to be reported.</li>
-                            <li className='mb-4'>Integrated the Power BI application into creating reports for executive leadership and generating action list items for IT employees weekly, saving 8 man-hours weekly.</li>
+                            <li className='mb-4'>Integrated the Power BI application into the reporting process for executive leadership and action list item generation for IT employees, saving 8 person-hours bi-weekly.</li>
                         </ul>
                         <p className='font-bold'>Tech Stack & Tools:</p>
                         <p>Power BI, Excel, Power Automate, Rapid7</p>
