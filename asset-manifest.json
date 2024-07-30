@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.25fb2e67.css",
-    "main.js": "/static/js/main.bcbb759a.js",
+    "main.js": "/static/js/main.87f6f75c.js",
     "static/js/845.39821de7.chunk.js": "/static/js/845.39821de7.chunk.js",
     "static/js/787.71e672d5.chunk.js": "/static/js/787.71e672d5.chunk.js",
     "static/media/song.mp3": "/static/media/song.f4ef6b8f791c6455e253.mp3",
@@ -11,12 +11,12 @@
     "static/media/toppng.com-color-vinyl-png-clear-vinyl-record-transparent-500x500.png": "/static/media/toppng.com-color-vinyl-png-clear-vinyl-record-transparent-500x500.280732639bd4a3cf7f06.png",
     "index.html": "/index.html",
     "main.25fb2e67.css.map": "/static/css/main.25fb2e67.css.map",
-    "main.bcbb759a.js.map": "/static/js/main.bcbb759a.js.map",
+    "main.87f6f75c.js.map": "/static/js/main.87f6f75c.js.map",
     "845.39821de7.chunk.js.map": "/static/js/845.39821de7.chunk.js.map",
     "787.71e672d5.chunk.js.map": "/static/js/787.71e672d5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.25fb2e67.css",
-    "static/js/main.bcbb759a.js"
+    "static/js/main.87f6f75c.js"
   ]
 }
