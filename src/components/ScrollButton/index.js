@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { MdKeyboardDoubleArrowUp } from 'react-icons/md';
 import './styles.css'
   

@@ -6,6 +6,7 @@ import About from '../About'
 import Projects from '../Projects';
 import Experience from '../Experience';
 import ScrollButton from '../ScrollButton';
+import ShowOnScroll from '../ShowOnScroll';
 
 const MouseModifier = () => {
   const [mousePosition, setMousePosition] = useState({
@@ -62,13 +63,17 @@ const MouseModifier = () => {
   return (
     <>  
         <div className='pb-40'>
-            <NavBar textEnter={textEnter} textLeave={textLeave} />
-            
-            <About textEnter={textEnter} textLeave={textLeave} />
+            <ShowOnScroll landing={true}>
+              <NavBar textEnter={textEnter} textLeave={textLeave} />
+              <About textEnter={textEnter} textLeave={textLeave} />
+            </ShowOnScroll>
             
             <Experience textEnter={textEnter} textLeave={textLeave}/>
 
-            <Projects textEnter={textEnter} textLeave={textLeave}/>
+            <ShowOnScroll>
+              <Projects textEnter={textEnter} textLeave={textLeave}/>
+            </ShowOnScroll>
+            
             <ScrollButton />
             <motion.div
                 className='cursor'
