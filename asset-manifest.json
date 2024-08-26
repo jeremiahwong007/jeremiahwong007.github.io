@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.c0083d65.css",
-    "main.js": "/static/js/main.64019ccb.js",
+    "main.css": "/static/css/main.73ba1708.css",
+    "main.js": "/static/js/main.06b0d539.js",
     "static/js/845.39821de7.chunk.js": "/static/js/845.39821de7.chunk.js",
     "static/js/787.71e672d5.chunk.js": "/static/js/787.71e672d5.chunk.js",
     "static/media/song.mp3": "/static/media/song.f4ef6b8f791c6455e253.mp3",
@@ -10,13 +10,13 @@
     "static/media/Screenshot 2023-09-12 at 11.16.59 PM.png": "/static/media/Screenshot 2023-09-12 at 11.16.59 PM.a67b7d77cdd551039a0e.png",
     "static/media/toppng.com-color-vinyl-png-clear-vinyl-record-transparent-500x500.png": "/static/media/toppng.com-color-vinyl-png-clear-vinyl-record-transparent-500x500.280732639bd4a3cf7f06.png",
     "index.html": "/index.html",
-    "main.c0083d65.css.map": "/static/css/main.c0083d65.css.map",
-    "main.64019ccb.js.map": "/static/js/main.64019ccb.js.map",
+    "main.73ba1708.css.map": "/static/css/main.73ba1708.css.map",
+    "main.06b0d539.js.map": "/static/js/main.06b0d539.js.map",
     "845.39821de7.chunk.js.map": "/static/js/845.39821de7.chunk.js.map",
     "787.71e672d5.chunk.js.map": "/static/js/787.71e672d5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c0083d65.css",
-    "static/js/main.64019ccb.js"
+    "static/css/main.73ba1708.css",
+    "static/js/main.06b0d539.js"
   ]
 }
