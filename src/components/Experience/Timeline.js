@@ -9,29 +9,17 @@ const Timeline = (props) => {
     const [showAvanir, setShowAvanir] = useState(false)
     const [showAstri, setShowAstri] = useState(false)
 
-    const clickFinanceit = () => {
-        setShowAstri(false)
-        setShowAvanir(false)
-        setShowFinanceit(true)
-    }
-
-    const clickAvanir = () => {
-        setShowFinanceit(false)
-        setShowAstri(false)
-        setShowAvanir(true)
-    }
-
-    const clickAstri = () => {
-        setShowFinanceit(false)
-        setShowAvanir(false)
-        setShowAstri(true)
+    const clickCompany = (company) => {
+        company === "Financeit" ? setShowFinanceit(true) : setShowFinanceit(false)
+        company === "Avanir" ? setShowAvanir(true) : setShowAvanir(false)
+        company === "Astri" ? setShowAstri(true) : setShowAstri(false)
     }
 
     return (
         <div className='sm:grid flex flex-col sm:grid-cols-[30%_70%] sm:grid-rows-1'>
             <div className='w-full'>
                 <div className="divide-y divide-gray-600 bg-black bg-opacity-40 rounded-lg shadow-md mb-4 sm:mb-0">
-                    <button className={`topTimeline flex justify-between gap-x-6 py-5 w-full px-5 ${showFinanceit ? 'bg-black' : ''}`} onClick={clickFinanceit} onMouseEnter={props.textEnter} onMouseLeave={props.textLeave}>
+                    <button className={`topTimeline flex justify-between gap-x-6 py-5 w-full px-5 ${showFinanceit ? 'bg-black' : ''}`} onClick={() => clickCompany("Financeit")} onMouseEnter={props.textEnter} onMouseLeave={props.textLeave}>
                         <div className="flex min-w-0 gap-x-4">
                             <img className="h-16 w-16 flex-none  bg-gray-50" src={financeit} alt=""/>
                             <div className="min-w-0 text-left">
@@ -44,7 +32,7 @@ const Timeline = (props) => {
                         </div>
                     </button>
 
-                    <button className={`flex justify-between w-full gap-x-6 py-5 px-5 ${showAvanir ? 'bg-black' : ''}`} onClick={clickAvanir} onMouseEnter={props.textEnter} onMouseLeave={props.textLeave}>
+                    <button className={`flex justify-between w-full gap-x-6 py-5 px-5 ${showAvanir ? 'bg-black' : ''}`} onClick={() => clickCompany("Avanir")} onMouseEnter={props.textEnter} onMouseLeave={props.textLeave}>
                         <div className="flex min-w-0 gap-x-4">
                             <img className="h-16 w-16 flex-none  bg-gray-50" src={avanir} alt=""/>
                             <div className="min-w-0 text-left">
@@ -57,7 +45,7 @@ const Timeline = (props) => {
                         </div>   
                     </button>
 
-                    <button className={`bottomTimeline flex justify-between gap-x-6 w-full py-5 px-5 ${showAstri ? 'bg-black' : ''}`}onClick={clickAstri} onMouseEnter={props.textEnter} onMouseLeave={props.textLeave}>
+                    <button className={`bottomTimeline flex justify-between gap-x-6 w-full py-5 px-5 ${showAstri ? 'bg-black' : ''}`} onClick={() => clickCompany("Astri")} onMouseEnter={props.textEnter} onMouseLeave={props.textLeave}>
                         <div className="flex min-w-0 gap-x-4">
                             <img className="h-16 w-16 flex-none  bg-gray-50" src={astri} alt=""/>
                             <div className="min-w-0 text-left">
@@ -73,35 +61,35 @@ const Timeline = (props) => {
             </div>
             <div className='sm:ml-5 rounded-lg bg-black bg-opacity-40 text-white px-8 py-8'>
                 <div onMouseEnter={props.textEnter} onMouseLeave={props.textLeave}>
-                    <div className={`${showFinanceit ? 'fadeInInfo' : 'fadeOutInfo hidden'}`}>
+                    <div className={`${showFinanceit ? 'visible' : 'hidden'}`}>
                         <div className='grid grid-cols-2 mb-4 font-bold'>
                             <p>Software Developer Co-op</p>
                             <p className='text-right'>May 2023 - Present</p>
                         </div>
                         <ul className='list-disc pl-4'>
-                            <li className='mb-2'>Developed and refined 15+ features based on client requests using Ruby on Rails and Ember.js, improving usability and reducing $500k+ in loan fraud losses.</li>
-                            <li className='mb-2'>Reduced tech debt from Financeit’s main product code base by utilizing Rollbar and Datadog observability tools, fixing 15+ bugs on production and deleting 9000+ lines of code.</li>
+                            <li className='mb-2'>Developed and enhanced multi-tenant application features using Ruby on Rails and Ember.js in an agile team, improving usability and reducing $500k+ in loan fraud losses.</li>
+                            <li className='mb-2'>Optimized Financeit’s product code base by utilizing Rollbar and Datadog to fix 15+ long-standing production bugs and delete 10,000+ lines of code, significantly reducing tech debt.</li>
                             <li className='mb-2'>Restructured Financeit’s product with senior developers to use a new third-party API for credit score and loan fraud checks, projected to save $1M+ in loan funding losses.</li>
-                            <li className='mb-2'>Engineered a new profit-generating feature in the Financeit application with senior developers, estimated to generate at least $1M+ in gross revenue in the first year.</li>
-                            <li className='mb-4'>Partnered with a staff developer to deliver 2 months of live issue support, ensuring uninterrupted service for users by resolving 25+ urgent bugs and issues.</li>
+                            <li className='mb-2'>Resolved 25+ urgent bugs and issues during 2 months of live support, ensuring uninterrupted and seamless user experience.</li>
+                            <li className='mb-4'>Engineered a new profit-generating feature in the Financeit application with senior developers, estimated to generate at least $1M+ in gross revenue in the first year.</li>
                         </ul>
                         <p className='font-bold'>Tech Stack & Tools:</p>
                         <p>Ruby on Rails, Ember.js, Datadog, Rollbar, Looker, Gitlab, Github</p>
                     </div>
-                    <div className={showAvanir ? 'fadeInInfo' : 'fadeOutInfo hidden'}>
+                    <div className={showAvanir ? 'visible' : 'hidden'}>
                         <div className='grid grid-cols-2 mb-4 font-bold'>
                             <p>Information Technology Intern</p>
                             <p className='text-right'>June 2022 - August 2022</p>
                         </div>
                         <ul className='list-disc pl-4'>
                             <li className='mb-2'>Developed a real-time application using Power BI to calculate statistics and refine the process of identifying 500+ company devices in need of service.</li>
-                            <li className='mb-2'>United with the cybersecurity division to link software vulnerability detection and malware prevention software statuses of company computers into the application, enabling 1100+ vulnerabilities to be reported.</li>
+                            <li className='mb-2'>Incorporated vulnerability detection and malware prevention into the application, collaborating with the cybersecurity division, and enabled the reporting of 1100+ vulnerabilities.</li>
                             <li className='mb-4'>Integrated the Power BI application into the reporting process for executive leadership and action list item generation for IT employees, saving 8 person-hours bi-weekly.</li>
                         </ul>
                         <p className='font-bold'>Tech Stack & Tools:</p>
                         <p>Power BI, Excel, Power Automate, Rapid7</p>
                     </div>
-                    <div className={showAstri ? 'fadeInInfo' : 'fadeOutInfo hidden'}>
+                    <div className={showAstri ? 'visible' : 'hidden'}>
                         <div className='grid grid-cols-2 mb-4 font-bold'>
                             <p>Software Engineer Intern</p>
                             <p className='text-right'>August 2019 - June 2020</p>
