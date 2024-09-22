@@ -64,7 +64,7 @@ const Timeline = (props) => {
                     <div className={`${showFinanceit ? 'visible' : 'hidden'}`}>
                         <div className='grid grid-cols-2 mb-4 font-bold'>
                             <p>Software Developer Co-op</p>
-                            <p className='text-right'>May 2023 - Present</p>
+                            <p className='text-right'>May 2023 - Aug 2024</p>
                         </div>
                         <ul className='list-disc pl-4'>
                             <li className='mb-2'>Developed and enhanced multi-tenant application features using Ruby on Rails and Ember.js in an agile team, improving usability and reducing $500k+ in loan fraud losses.</li>
