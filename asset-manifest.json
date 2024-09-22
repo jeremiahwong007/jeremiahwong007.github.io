@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/static/css/main.73ba1708.css",
-    "main.js": "/static/js/main.06b0d539.js",
+    "main.js": "/static/js/main.31eaec51.js",
     "static/js/845.39821de7.chunk.js": "/static/js/845.39821de7.chunk.js",
     "static/js/787.71e672d5.chunk.js": "/static/js/787.71e672d5.chunk.js",
-    "static/media/song.mp3": "/static/media/song.f4ef6b8f791c6455e253.mp3",
     "static/media/albumn_cover.png": "/static/media/albumn_cover.41eae335a1b1b4941ab4.png",
     "static/media/my-background-video.mp4": "/static/media/my-background-video.732f3dbd87f1413fd846.mp4",
+    "static/media/song.mp3": "/static/media/song.df029523e2139a485fce.mp3",
     "static/media/Screenshot 2023-09-12 at 11.16.59 PM.png": "/static/media/Screenshot 2023-09-12 at 11.16.59 PM.a67b7d77cdd551039a0e.png",
     "static/media/toppng.com-color-vinyl-png-clear-vinyl-record-transparent-500x500.png": "/static/media/toppng.com-color-vinyl-png-clear-vinyl-record-transparent-500x500.280732639bd4a3cf7f06.png",
     "index.html": "/index.html",
     "main.73ba1708.css.map": "/static/css/main.73ba1708.css.map",
-    "main.06b0d539.js.map": "/static/js/main.06b0d539.js.map",
+    "main.31eaec51.js.map": "/static/js/main.31eaec51.js.map",
     "845.39821de7.chunk.js.map": "/static/js/845.39821de7.chunk.js.map",
     "787.71e672d5.chunk.js.map": "/static/js/787.71e672d5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.73ba1708.css",
-    "static/js/main.06b0d539.js"
+    "static/js/main.31eaec51.js"
   ]
 }
