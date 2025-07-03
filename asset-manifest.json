@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.cb5172a3.css",
+    "main.css": "/static/css/main.c5745bc1.css",
     "main.js": "/static/js/main.4f9bc177.js",
     "static/js/845.39821de7.chunk.js": "/static/js/845.39821de7.chunk.js",
     "static/js/787.71e672d5.chunk.js": "/static/js/787.71e672d5.chunk.js",
@@ -10,13 +10,13 @@
     "static/media/Screenshot 2023-09-12 at 11.16.59 PM.png": "/static/media/Screenshot 2023-09-12 at 11.16.59 PM.a67b7d77cdd551039a0e.png",
     "static/media/toppng.com-color-vinyl-png-clear-vinyl-record-transparent-500x500.png": "/static/media/toppng.com-color-vinyl-png-clear-vinyl-record-transparent-500x500.280732639bd4a3cf7f06.png",
     "index.html": "/index.html",
-    "main.cb5172a3.css.map": "/static/css/main.cb5172a3.css.map",
+    "main.c5745bc1.css.map": "/static/css/main.c5745bc1.css.map",
     "main.4f9bc177.js.map": "/static/js/main.4f9bc177.js.map",
     "845.39821de7.chunk.js.map": "/static/js/845.39821de7.chunk.js.map",
     "787.71e672d5.chunk.js.map": "/static/js/787.71e672d5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cb5172a3.css",
+    "static/css/main.c5745bc1.css",
     "static/js/main.4f9bc177.js"
   ]
 }
