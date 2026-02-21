@@ -1,6 +1,4 @@
 import ProjectCard from "../ProjectCard";
-import { useRef } from 'react';
-import { useInView } from 'framer-motion';
 
 const uoftruck_desc = "Built a University of Toronto Food truck ordering web application using object-oriented programming. This project also involved creating a rigorous unit testing system and adopting clean architecture principles (SOLID Principles). Utilized Java and React to build the application with a customer and vendor user interface."
 const uoftruck_tech_stack = ["React", "Java", "Spring", "JUnit"]
@@ -15,28 +13,25 @@ const website_tech_stack = ["React", "Tailwind"]
 
 //just some text you see when the website first loads
 const Projects = (props) => {
-  const ref = useRef(null);
-  const inView = useInView(ref, { once: true });
-
   return (
     <div className="min-h-screen mt-40 pt-6" id='Projects'>
         <div className="ml-[10%] text-left text-white text-6xl font-bold mb-8 flex flex-row">
             <h1 onMouseEnter={props.textEnter} onMouseLeave={props.textLeave}>Projects</h1>
         </div>
-        <div ref={ref} className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mx-[10%]">
-            <ProjectCard index={0} inView={inView} textEnter={props.textEnter} textLeave={props.textLeave} name="Journaling AI"
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mx-[10%]">
+            <ProjectCard textEnter={props.textEnter} textLeave={props.textLeave} name="Journaling AI"
                 description={journaling_desc} repo_link="https://github.com/CSC207-UofT/course-project-javajsk"
                 tech_stack={journaling_desc_tech_stack}/>
-            <ProjectCard index={1} inView={inView} textEnter={props.textEnter} textLeave={props.textLeave} name="UofTruck"
+            <ProjectCard textEnter={props.textEnter} textLeave={props.textLeave} name="UofTruck"
                 description={uoftruck_desc} repo_link="https://github.com/CSC207-UofT/course-project-javajsk"
                 tech_stack={uoftruck_tech_stack} show_link={true}/>
-            <ProjectCard index={2} inView={inView} textEnter={props.textEnter} textLeave={props.textLeave} name="Anime Atlas"
+            <ProjectCard textEnter={props.textEnter} textLeave={props.textLeave} name="Anime Atlas"
                 description={anime_atlas_desc} repo_link="https://github.com/jeremiahwong007/Anime-Atlas"
                 tech_stack={anime_atlas_tech_stack} show_link={true}/>
-            <ProjectCard index={3} inView={inView} textEnter={props.textEnter} textLeave={props.textLeave} name="Meat Monitor"
+            <ProjectCard textEnter={props.textEnter} textLeave={props.textLeave} name="Meat Monitor"
                 description={meat_monitor_desc} repo_link="https://github.com/jeremiahwong007/Meat-Monitor"
                 tech_stack={meat_monitor_tech_stack} show_link={true}/>
-            <ProjectCard index={4} inView={inView} textEnter={props.textEnter} textLeave={props.textLeave} name="Personal Website"
+            <ProjectCard textEnter={props.textEnter} textLeave={props.textLeave} name="Personal Website"
                 description={website_desc} repo_link="https://github.com/CSC207-UofT/course-project-javajsk"
                 tech_stack={website_tech_stack}/>
         </div>

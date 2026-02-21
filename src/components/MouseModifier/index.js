@@ -24,8 +24,9 @@ const MouseModifier = () => {
       })
 
       var vinyl = document.getElementById("rainbowVinyl");
-      var vinylX = vinyl.offsetLeft+ vinyl.offsetWidth/2;
-      var vinylY = vinyl.offsetTop + vinyl.offsetHeight/2;
+      var rect = vinyl.getBoundingClientRect();
+      var vinylX = rect.left + rect.width / 2;
+      var vinylY = rect.top + rect.height / 2;
       var dX = vinylX - e.clientX;
       var dY = vinylY - e.clientY;
       var degree = Math.atan(- dX / dY) * 180 / Math.PI;

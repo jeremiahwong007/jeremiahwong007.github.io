@@ -1,5 +1,3 @@
-import { motion } from 'framer-motion';
-
 const ProjectCard = (props) => {
 
     const techStack = props.tech_stack.map((tech) =>
@@ -7,13 +5,10 @@ const ProjectCard = (props) => {
     );
 
     return (
-        <motion.div
+        <div
             className="border shadow-md border-white/10 rounded-lg bg-white/5 backdrop-blur-md transition-all duration-300 hover:scale-[1.02] hover:border-white/25 hover:shadow-lg hover:bg-white/10"
             onMouseEnter={props.textEnter}
             onMouseLeave={props.textLeave}
-            initial={{ opacity: 0, y: 20 }}
-            animate={props.inView ? { opacity: 1, y: 0 } : {}}
-            transition={{ duration: 0.5, delay: props.index * 0.1 }}
         >
             <div className="p-5">
                 <h5 className="mb-4 text-2xl font-bold tracking-tight text-white">{props.name}</h5>
@@ -30,7 +25,7 @@ const ProjectCard = (props) => {
                 }
 
             </div>
-        </motion.div>
+        </div>
     );
 }
 
