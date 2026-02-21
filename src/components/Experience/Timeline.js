@@ -12,7 +12,7 @@ const Timeline = (props) => {
         <div className='sm:grid flex flex-col sm:grid-cols-[30%_70%] sm:grid-rows-1'>
             <div className='w-full'>
                 <div className="divide-y divide-gray-600 bg-white/5 backdrop-blur-md rounded-lg shadow-md mb-4 sm:mb-0">
-                    <button className={`topTimeline flex justify-between gap-x-6 py-5 w-full px-5 ${activeCompany === "Financeit" ? 'bg-white/10 border-l-2 border-purple-500' : ''}`} onClick={() => setActiveCompany("Financeit")} onMouseEnter={props.textEnter} onMouseLeave={props.textLeave}>
+                    <button className={`topTimeline flex justify-between gap-x-6 py-5 w-full px-5 ${activeCompany === "Financeit" ? 'bg-gradient-to-r from-purple-500/20 to-blue-500/10' : ''}`} onClick={() => setActiveCompany("Financeit")} onMouseEnter={props.textEnter} onMouseLeave={props.textLeave}>
                         <div className="flex min-w-0 gap-x-4">
                             <img className="h-16 w-16 flex-none rounded-lg object-cover" src={financeit} alt=""/>
                             <div className="min-w-0 text-left">
@@ -25,7 +25,7 @@ const Timeline = (props) => {
                         </div>
                     </button>
 
-                    <button className={`flex justify-between w-full gap-x-6 py-5 px-5 ${activeCompany === "Avanir" ? 'bg-white/10 border-l-2 border-purple-500' : ''}`} onClick={() => setActiveCompany("Avanir")} onMouseEnter={props.textEnter} onMouseLeave={props.textLeave}>
+                    <button className={`flex justify-between w-full gap-x-6 py-5 px-5 ${activeCompany === "Avanir" ? 'bg-gradient-to-r from-purple-500/20 to-blue-500/10' : ''}`} onClick={() => setActiveCompany("Avanir")} onMouseEnter={props.textEnter} onMouseLeave={props.textLeave}>
                         <div className="flex min-w-0 gap-x-4">
                             <img className="h-16 w-16 flex-none rounded-lg object-cover" src={avanir} alt=""/>
                             <div className="min-w-0 text-left">
@@ -38,7 +38,7 @@ const Timeline = (props) => {
                         </div>
                     </button>
 
-                    <button className={`bottomTimeline flex justify-between gap-x-6 w-full py-5 px-5 ${activeCompany === "Astri" ? 'bg-white/10 border-l-2 border-purple-500' : ''}`} onClick={() => setActiveCompany("Astri")} onMouseEnter={props.textEnter} onMouseLeave={props.textLeave}>
+                    <button className={`bottomTimeline flex justify-between gap-x-6 w-full py-5 px-5 ${activeCompany === "Astri" ? 'bg-gradient-to-r from-purple-500/20 to-blue-500/10' : ''}`} onClick={() => setActiveCompany("Astri")} onMouseEnter={props.textEnter} onMouseLeave={props.textLeave}>
                         <div className="flex min-w-0 gap-x-4">
                             <img className="h-16 w-16 flex-none rounded-lg object-cover" src={astri} alt=""/>
                             <div className="min-w-0 text-left">
