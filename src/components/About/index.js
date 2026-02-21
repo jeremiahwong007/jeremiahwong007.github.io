@@ -37,7 +37,7 @@ const About = (props) => {
             </div>
         </div>
         <div className="flex items-center sm:px-5 sm:pl-0 sm:w-[40%] ml-[10%] mr-[10%] sm:mx-0">
-            <div className="text-center rounded-xl bg-black bg-opacity-40 shadow-md px-4 py-4 w-full sm:w-[90%]">
+            <div className="text-center rounded-xl bg-white/5 backdrop-blur-md shadow-md px-4 py-4 w-full sm:w-[90%]">
                 <div className="block sm:mb-8 flex flex-row justify-center">
                     <img onMouseEnter={props.textEnter} onMouseLeave={props.textLeave} className="profile mr-3 shadow-xl" src={profile} alt="profile"></img>
                     <div className="flex flex-col">

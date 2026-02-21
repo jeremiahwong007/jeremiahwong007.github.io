@@ -1,130 +1,63 @@
 
 
 const Skills = (props) => {
-    
+
     return (
         <div className="text-white w-full mt-20">
-            <div className="flex mt-8 w-full justify-between">
-                <div className="mr-2 w-[30%]">
+            <div className="flex flex-col gap-8 mt-8">
+                <div>
                     <p className="font-bold text-lg" onMouseEnter={props.textEnter} onMouseLeave={props.textLeave}>
                         Languages
                     </p>
-                    <div className="grid sm:grid-cols-2 mt-2">
-                        <ul className="break-words mr-2" onMouseEnter={props.textEnter} onMouseLeave={props.textLeave}>
-                            <li className="mb-1">
-                                Python
-                            </li>
-                            <li className="mb-1">
-                                Java
-                            </li>
-                            <li className="mb-1">
-                                C
-                            </li>
-                            <li className="mb-1">
-                                JavaScript
-                            </li>
-                            <li className="mb-1">
-                                Ruby
-                            </li>
-                            <li className="mb-1">
-                                SQL
-                            </li>
-                        </ul>
-                        <ul onMouseEnter={props.textEnter} onMouseLeave={props.textLeave}>
-                            <li className="mb-1">
-                                C#
-                            </li>
-                            <li className="mb-1">
-                                HTML/CSS
-                            </li>
-                            <li className="mb-1">
-                                R
-                            </li>
-                            <li className="mb-1">
-                                MIPS Assembly
-                            </li>
-                            <li>
-                                VBA
-                            </li>
-                        </ul>
+                    <div className="flex flex-wrap gap-2 mt-3" onMouseEnter={props.textEnter} onMouseLeave={props.textLeave}>
+                        <span className="px-3 py-1 text-sm rounded-full bg-white/10 border border-white/10 backdrop-blur-sm">Python</span>
+                        <span className="px-3 py-1 text-sm rounded-full bg-white/10 border border-white/10 backdrop-blur-sm">Java</span>
+                        <span className="px-3 py-1 text-sm rounded-full bg-white/10 border border-white/10 backdrop-blur-sm">C</span>
+                        <span className="px-3 py-1 text-sm rounded-full bg-white/10 border border-white/10 backdrop-blur-sm">JavaScript</span>
+                        <span className="px-3 py-1 text-sm rounded-full bg-white/10 border border-white/10 backdrop-blur-sm">Ruby</span>
+                        <span className="px-3 py-1 text-sm rounded-full bg-white/10 border border-white/10 backdrop-blur-sm">SQL</span>
+                        <span className="px-3 py-1 text-sm rounded-full bg-white/10 border border-white/10 backdrop-blur-sm">C#</span>
+                        <span className="px-3 py-1 text-sm rounded-full bg-white/10 border border-white/10 backdrop-blur-sm">HTML/CSS</span>
+                        <span className="px-3 py-1 text-sm rounded-full bg-white/10 border border-white/10 backdrop-blur-sm">R</span>
+                        <span className="px-3 py-1 text-sm rounded-full bg-white/10 border border-white/10 backdrop-blur-sm">MIPS Assembly</span>
+                        <span className="px-3 py-1 text-sm rounded-full bg-white/10 border border-white/10 backdrop-blur-sm">VBA</span>
                     </div>
-                    
                 </div>
-                
-                <div className="mx-2 w-1/3">
+
+                <div>
                     <p className="font-bold text-lg" onMouseEnter={props.textEnter} onMouseLeave={props.textLeave}>
                         Frameworks & Tools
                     </p>
-                    <div className="grid sm:grid-cols-[50%_30%] mt-2">
-                        <ul className="mr-2 break-words" onMouseEnter={props.textEnter} onMouseLeave={props.textLeave}>
-                            <li className="mb-1">
-                                Django
-                            </li>
-                            <li className="mb-1">
-                                Ruby on Rails
-                            </li>
-                            <li className="mb-1">
-                                Ember.js
-                            </li>
-                            <li className="mb-1">
-                                Git
-                            </li>
-                            <li className="mb-1">
-                                PostgreSQL
-                            </li>
-                            <li>
-                                Firebase
-                            </li>
-                        </ul>
-                        <ul onMouseEnter={props.textEnter} onMouseLeave={props.textLeave}>
-                            <li className="mb-1">
-                                Express.js
-                            </li>
-                            <li className="mb-1">
-                                Datadog
-                            </li>
-                            <li className="mb-1">
-                                Rollbar
-                            </li>
-                            <li className="mb-1">
-                                Gitlab
-                            </li>
-                            <li className="mb-1">
-                                Power BI
-                            </li>
-                            <li>
-                                Unity
-                            </li>
-                        </ul>
+                    <div className="flex flex-wrap gap-2 mt-3" onMouseEnter={props.textEnter} onMouseLeave={props.textLeave}>
+                        <span className="px-3 py-1 text-sm rounded-full bg-white/10 border border-white/10 backdrop-blur-sm">Django</span>
+                        <span className="px-3 py-1 text-sm rounded-full bg-white/10 border border-white/10 backdrop-blur-sm">Ruby on Rails</span>
+                        <span className="px-3 py-1 text-sm rounded-full bg-white/10 border border-white/10 backdrop-blur-sm">Ember.js</span>
+                        <span className="px-3 py-1 text-sm rounded-full bg-white/10 border border-white/10 backdrop-blur-sm">Git</span>
+                        <span className="px-3 py-1 text-sm rounded-full bg-white/10 border border-white/10 backdrop-blur-sm">PostgreSQL</span>
+                        <span className="px-3 py-1 text-sm rounded-full bg-white/10 border border-white/10 backdrop-blur-sm">Firebase</span>
+                        <span className="px-3 py-1 text-sm rounded-full bg-white/10 border border-white/10 backdrop-blur-sm">Express.js</span>
+                        <span className="px-3 py-1 text-sm rounded-full bg-white/10 border border-white/10 backdrop-blur-sm">Datadog</span>
+                        <span className="px-3 py-1 text-sm rounded-full bg-white/10 border border-white/10 backdrop-blur-sm">Rollbar</span>
+                        <span className="px-3 py-1 text-sm rounded-full bg-white/10 border border-white/10 backdrop-blur-sm">Gitlab</span>
+                        <span className="px-3 py-1 text-sm rounded-full bg-white/10 border border-white/10 backdrop-blur-sm">Power BI</span>
+                        <span className="px-3 py-1 text-sm rounded-full bg-white/10 border border-white/10 backdrop-blur-sm">Unity</span>
                     </div>
                 </div>
-                
-                <div className="ml-2">
+
+                <div>
                     <p className="font-bold text-lg" onMouseEnter={props.textEnter} onMouseLeave={props.textLeave}>
                         Libraries
                     </p>
-                    <ul className="mt-2" onMouseEnter={props.textEnter} onMouseLeave={props.textLeave}>
-                        <li className="mb-1">
-                            React
-                        </li>
-                        <li className="mb-1">
-                            NumPy
-                        </li>
-                        <li className="mb-1">
-                            Matplotlib
-                        </li>
-                        <li className="mb-1">
-                            Pandas
-                        </li>
-                        <li className="mb-1">
-                            BeautifulSoup
-                        </li>
-                        <li>
-                            Tkinter
-                        </li>
-                    </ul>
+                    <div className="flex flex-wrap gap-2 mt-3" onMouseEnter={props.textEnter} onMouseLeave={props.textLeave}>
+                        <span className="px-3 py-1 text-sm rounded-full bg-white/10 border border-white/10 backdrop-blur-sm">React</span>
+                        <span className="px-3 py-1 text-sm rounded-full bg-white/10 border border-white/10 backdrop-blur-sm">NumPy</span>
+                        <span className="px-3 py-1 text-sm rounded-full bg-white/10 border border-white/10 backdrop-blur-sm">Matplotlib</span>
+                        <span className="px-3 py-1 text-sm rounded-full bg-white/10 border border-white/10 backdrop-blur-sm">Pandas</span>
+                        <span className="px-3 py-1 text-sm rounded-full bg-white/10 border border-white/10 backdrop-blur-sm">BeautifulSoup</span>
+                        <span className="px-3 py-1 text-sm rounded-full bg-white/10 border border-white/10 backdrop-blur-sm">Tkinter</span>
+                    </div>
                 </div>
-                
+
             </div>
         </div>
     );

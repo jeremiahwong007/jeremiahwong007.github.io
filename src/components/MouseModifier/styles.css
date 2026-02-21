@@ -9,3 +9,10 @@
     pointer-events: none;
     margin-top: 0;
   }
+
+/* Hide custom cursor on mobile devices */
+@media (max-width: 639px) {
+  .cursor {
+    display: none;
+  }
+}
