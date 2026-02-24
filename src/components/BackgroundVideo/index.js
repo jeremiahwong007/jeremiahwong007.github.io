@@ -3,7 +3,7 @@ import './styles.css'
 
 const BackgroundVideo = () => {
     return <>
-        <video className='my-video hidden sm:block' autoPlay loop muted>
+        <video className='my-video' autoPlay loop muted playsInline poster="/mobile_background.png">
             <source src={background_vid} type="video/mp4"></source>
         </video>
     </>
