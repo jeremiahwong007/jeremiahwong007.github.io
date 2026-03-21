@@ -9,15 +9,15 @@ import './styles.css'
 const MusicPlayer = (props) => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [time, setTime] = useState({
-    min: "",
-    sec: ""
+    min: 0,
+    sec: 0
   });
   const [currTime, setCurrTime] = useState({
-    min: "",
-    sec: ""
+    min: 0,
+    sec: 0
   });
 
-  const [seconds, setSeconds] = useState();
+  const [seconds, setSeconds] = useState(0);
 
   const [play, { pause, duration, sound }] = useSound(song, { volume: 0.7 });
 
@@ -36,13 +36,13 @@ const MusicPlayer = (props) => {
   useEffect(() => {
     const interval = setInterval(() => {
       if (sound) {
-        setSeconds(sound.seek([]));
-        const min = Math.floor(sound.seek([]) / 60);
-        const sec = Math.floor(sound.seek([]) % 60);
-        setCurrTime({
-          min,
-          sec
-        });
+        const seek = sound.seek([]);
+        if (typeof seek === 'number' && !isNaN(seek)) {
+          setSeconds(seek);
+          const min = Math.floor(seek / 60);
+          const sec = Math.floor(seek % 60);
+          setCurrTime({ min, sec });
+        }
       }
     }, 1000);
     return () => clearInterval(interval);
@@ -59,56 +59,31 @@ const MusicPlayer = (props) => {
   };
 
   return (
-    <div className="mt-10">
-        <div className="flex flex-row w-full" onMouseEnter={props.textEnter} 
-            onMouseLeave={props.textLeave}>
-            <div className="w-1/4">
-                <img className="musicCover my-auto" src={albumn_cover} alt="No Albumn Cover"/>
-            </div>
-            <div className="w-1/4 pl-2">
-                <h3 className="text-white font-bold mt-1">Lofi Mix</h3>
-                <p className="text-white text-sm">lofi geek</p>
-            </div>
-            <div className="w-1/2">
-                <div>
-                    <div className="time" onMouseEnter={props.textEnter} 
-            onMouseLeave={props.textLeave}>
-                    <p>
-                        {currTime.min}:{currTime.sec}
-                    </p>
-                    <p>
-                        {time.min}:{time.sec}
-                    </p>
-                    </div>
-                    <input onMouseEnter={props.textEnter} 
-            onMouseLeave={props.textLeave}
-                    type="range"
-                    min="0"
-                    max={duration / 1000}
-                    default="0"
-                    value={seconds}
-                    className="timeline text-gray-500"
-                    onChange={(e) => {
-                        sound.seek([e.target.value]);
-                    }}
-                    />
-                </div>
-                <div>
-                    {!isPlaying ? (
-                    <button className="playButton" onClick={playingButton} onMouseEnter={props.textEnter} onMouseLeave={props.textLeave}>
-                        <IconContext.Provider value={{ size: "2.5em", color: "white" }}>
-                        <AiFillPlayCircle />
-                        </IconContext.Provider>
-                    </button>
-                    ) : (
-                    <button className="playButton" onClick={playingButton} onMouseEnter={props.textEnter} onMouseLeave={props.textLeave}>
-                        <IconContext.Provider value={{ size: "2.5em", color: "white" }}>
-                        <AiFillPauseCircle />
-                        </IconContext.Provider>
-                    </button>
-                    )}
-                </div>
-            </div>
+    <div className="flex items-center gap-4 w-full">
+        <img className="h-10 w-10 rounded flex-none object-cover aspect-square" src={albumn_cover} alt="No Albumn Cover"/>
+        <div className="flex-none min-w-0">
+            <h3 className="text-white text-sm font-bold leading-tight">Lofi Mix</h3>
+            <p className="text-gray-400 text-xs">lofi geek</p>
+        </div>
+        <button className="flex-none" onClick={playingButton}>
+            <IconContext.Provider value={{ size: "2em", color: "white" }}>
+                {isPlaying ? <AiFillPauseCircle /> : <AiFillPlayCircle />}
+            </IconContext.Provider>
+        </button>
+        <div className="flex items-center gap-2 flex-1 min-w-0">
+            <p className="text-white text-xs flex-none">{currTime.min}:{currTime.sec}</p>
+            <input
+                type="range"
+                min="0"
+                max={duration / 1000}
+                default="0"
+                value={seconds}
+                className="timeline flex-1"
+                onChange={(e) => {
+                    sound.seek([e.target.value]);
+                }}
+            />
+            <p className="text-white text-xs flex-none">{time.min}:{time.sec}</p>
         </div>
     </div>
   );

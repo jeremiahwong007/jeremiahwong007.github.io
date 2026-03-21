@@ -1,12 +1,13 @@
-import background_vid from './my-background-video.mp4'
 import './styles.css'
 
-const BackgroundVideo = () => {
-    return <>
-        <video className='my-video' autoPlay loop muted playsInline webkit-playsinline poster="/mobile_background.png">
-            <source src={background_vid} type="video/mp4"></source>
-        </video>
-    </>
+const AnimatedBackground = () => {
+    return (
+        <div className="animated-bg">
+            <div className="gradient-orb orb-1"></div>
+            <div className="gradient-orb orb-2"></div>
+            <div className="gradient-orb orb-3"></div>
+        </div>
+    )
 }
 
-export default BackgroundVideo;
+export default AnimatedBackground;

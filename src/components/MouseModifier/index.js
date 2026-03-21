@@ -1,6 +1,5 @@
 import { useEffect } from 'react';
 import './styles.css';
-import NavBar from '../NavBar';
 import About from '../About'
 import Projects from '../Projects';
 import Experience from '../Experience';
@@ -11,6 +10,7 @@ const MouseModifier = () => {
   useEffect(() => {
     const mouseMove = e => {
       var vinyl = document.getElementById("rainbowVinyl");
+      if (!vinyl) return;
       var rect = vinyl.getBoundingClientRect();
       var vinylX = rect.left + rect.width / 2;
       var vinylY = rect.top + rect.height / 2;
@@ -33,23 +33,19 @@ const MouseModifier = () => {
   const textLeave = () => {};
 
   return (
-    <>
-        <div className='pb-40'>
-            <ShowOnScroll landing={true}>
-              <NavBar textEnter={textEnter} textLeave={textLeave} />
-              <About textEnter={textEnter} textLeave={textLeave} />
-            </ShowOnScroll>
+    <div className='relative z-10 pb-40'>
+        <ShowOnScroll landing={true}>
+          <About textEnter={textEnter} textLeave={textLeave} />
+        </ShowOnScroll>
 
-            <Experience textEnter={textEnter} textLeave={textLeave}/>
+        <Experience textEnter={textEnter} textLeave={textLeave}/>
 
-            <ShowOnScroll>
-              <Projects textEnter={textEnter} textLeave={textLeave}/>
-            </ShowOnScroll>
+        <ShowOnScroll>
+          <Projects textEnter={textEnter} textLeave={textLeave}/>
+        </ShowOnScroll>
 
-            <ScrollButton />
-        </div>
-    </>
-
+        <ScrollButton />
+    </div>
   );
 }
 

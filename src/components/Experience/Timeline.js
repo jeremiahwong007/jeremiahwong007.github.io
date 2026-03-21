@@ -11,7 +11,7 @@ const Timeline = (props) => {
     return (
         <div className='sm:grid flex flex-col sm:grid-cols-[30%_70%] sm:grid-rows-1'>
             <div className='w-full'>
-                <div className="divide-y divide-gray-600 bg-white/5 backdrop-blur-md rounded-lg shadow-md mb-4 sm:mb-0">
+                <div className="divide-y divide-gray-600 bg-white/10 backdrop-blur-md rounded-lg shadow-md border border-white/10 mb-4 sm:mb-0">
                     <button className={`topTimeline flex justify-between gap-x-6 py-5 w-full px-5 ${activeCompany === "Financeit" ? 'bg-gradient-to-r from-purple-500/20 to-blue-500/10' : ''}`} onClick={() => setActiveCompany("Financeit")} onMouseEnter={props.textEnter} onMouseLeave={props.textLeave}>
                         <div className="flex min-w-0 gap-x-4">
                             <img className="h-16 w-16 flex-none rounded-lg object-cover" src={financeit} alt=""/>
@@ -52,7 +52,7 @@ const Timeline = (props) => {
                     </button>
                 </div>
             </div>
-            <div className='sm:ml-5 rounded-lg bg-white/5 backdrop-blur-md text-white px-8 py-8'>
+            <div className='sm:ml-5 rounded-lg bg-white/10 backdrop-blur-md border border-white/10 text-white px-8 py-8'>
                 <div onMouseEnter={props.textEnter} onMouseLeave={props.textLeave}>
                     <AnimatePresence mode="wait">
                         {activeCompany === "Financeit" && (

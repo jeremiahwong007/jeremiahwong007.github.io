@@ -15,7 +15,7 @@ const website_tech_stack = ["React", "Tailwind"]
 const Projects = (props) => {
   return (
     <div className="min-h-screen mt-40 pt-6" id='Projects'>
-        <div className="ml-[10%] text-left text-white text-6xl font-bold mb-8 flex flex-row">
+        <div className="ml-[10%] text-left text-white text-6xl font-normal font-serif mb-8 flex flex-row">
             <h1 onMouseEnter={props.textEnter} onMouseLeave={props.textLeave}>Projects</h1>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mx-[10%]">
